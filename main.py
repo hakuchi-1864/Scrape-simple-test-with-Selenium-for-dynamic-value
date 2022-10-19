@@ -12,12 +12,13 @@ def get_driver():
   options.add_argument("disable-blink-features=AutomationControlled")
 
   driver = webdriver.Chrome(options=options)
-  driver.get("http://automated.pythonanywhere.com")
+  driver.get("http://py4e-data.dr-chuck.net/regex_sum_42.txt")
   return driver
 
 def main():
   driver = get_driver()
-  element = driver.find_element(by="xpath", value="/html/body/div[1]/div/h1[1]")
+  element = driver.find_element(by="xpath", value="/html/body/pre")
   return element.text
 
 print(main())
+
