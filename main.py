@@ -1,5 +1,6 @@
 
 from selenium import webdriver
+# allow us to instruct the behaviour of the web browser
 
 def get_driver():
   # Set options to make browsing easier
